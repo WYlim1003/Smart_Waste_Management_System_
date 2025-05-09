@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="main.html"><b>Smart Waste Management</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wasteManagement.html">Waste Detection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <section class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Smart Waste Management System</h1>
+                    <p class="lead">An intelligent solution for proper waste segregation and management</p>
+                    <a href="wasteManagement.html" class="btn btn-primary btn-lg">Start Waste Detection</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="wasteManagement.jpg" alt="Waste Management" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2>Our Waste Categories</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Paper Waste</h5>
+                            <p class="card-text">Recycle paper products including:</p>
+                            <ul class="list-unstyled">
+                                <li>✓ Books</li>
+                                <li>✓ Newspapers</li>
+                                <li>✓ Cardboard</li>
+                                <li>✓ Magazines</li>
+                                <li>✓ Envelopes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Plastic Waste</h5>
+                            <p class="card-text">Recycle plastic items including:</p>
+                            <ul class="list-unstyled">
+                                <li>✓ Bottles</li>
+                                <li>✓ Cups</li>
+                                <li>✓ Plastic bags</li>
+                                <li>✓ Containers</li>
+                                <li>✓ Packaging</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Cans Waste</h5>
+                            <p class="card-text">Recycle metal items including:</p>
+                            <ul class="list-unstyled">
+                                <li>✓ Cans</li>
+                                <li>✓ Tin cans</li>
+                                <li>✓ Aluminum cans</li>
+                                <li>✓ Metal containers</li>
+                                <li>✓ Foil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2>How It Works</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">1. Scan</h3>
+                            <p class="card-text">Use your camera to scan waste items</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">2. Detect</h3>
+                            <p class="card-text">Our AI system identifies the waste type</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2>Features</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Real-time Detection</h5>
+                            <p class="card-text">Advanced AI technology for instant waste classification</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Bin Monitoring</h5>
+                            <p class="card-text">Track bin capacity and get alerts when bins are full</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Item History</h5>
+                            <p class="card-text">View recently added items in each bin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">WEAIENGINEER  &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
